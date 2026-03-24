@@ -1,0 +1,16 @@
+{
+  "name": "ts-module-lib",
+  "version": "1.0.0",
+  "type": "module",
+  "imports": {
+    "#scriptdrop": "./framework/index.ts"
+  },
+  "scripts": {
+    "dev": "node framework/dev.mjs",
+    "build": "node framework/build.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^6.0.2"
+  }
+}
