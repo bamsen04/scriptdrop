@@ -1,7 +1,9 @@
 {
   "name": "scriptdrop",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "type": "module",
+  "main": "./framework/index.ts",
+  "exports": "./framework/index.ts",
   "bin": {
     "scriptdrop": "framework/cli.mjs"
   },

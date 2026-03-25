@@ -24,8 +24,8 @@ const ctx = await esbuild.context({
     entryPoints: [`${cwd}/src/index.ts`],
     bundle: true,
     format: 'esm',
-    outfile: `${cwd}/framework/output.js`,
-    minify: true,
+    outfile: `${tmpDir}/output.js`,
+    minify: false,
 });
 
 await ctx.watch();
@@ -36,7 +36,7 @@ createServer((req, res) => {
         res.end(config.url);
     } else {
         res.writeHead(200, { 'Content-Type': 'text/javascript' });
-        res.end(readFileSync(`${cwd}/framework/output.js`));
+        res.end(readFileSync(`${tmpDir}/output.js`));
     }
 }).listen(4454);
 
