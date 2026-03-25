@@ -7,7 +7,7 @@ import { pathToFileURL } from 'url';
 const cwd = process.cwd();
 
 const configBuild = await esbuild.build({
-    entryPoints: [`${cwd}/project.modulelib.ts`],
+    entryPoints: [`${cwd}/scriptdrop.config.ts`],
     bundle: true,
     format: 'esm',
     write: false,

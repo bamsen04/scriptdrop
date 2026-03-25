@@ -1,16 +1,14 @@
 {
-  "name": "ts-module-lib",
+  "name": "scriptdrop",
   "version": "1.0.0",
   "type": "module",
-  "imports": {
-    "#scriptdrop": "./framework/index.ts"
+  "bin": {
+    "scriptdrop": "framework/cli.mjs"
   },
-  "scripts": {
-    "dev": "node framework/dev.mjs",
-    "build": "node framework/build.mjs"
-  },
-  "devDependencies": {
-    "esbuild": "^0.25.0",
-    "typescript": "^6.0.2"
+  "files": [
+    "framework/"
+  ],
+  "dependencies": {
+    "esbuild": "^0.25.0"
   }
 }
