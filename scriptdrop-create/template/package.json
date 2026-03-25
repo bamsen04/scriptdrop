@@ -1,0 +1,13 @@
+{
+  "name": "%%package_name",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npx scriptdrop dev",
+    "build": "npx scriptdrop build"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.2",
+    "scriptdrop": "^1.0.3"
+  }
+}

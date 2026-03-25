@@ -1,0 +1,12 @@
+{
+  "name": "create-scriptdrop",
+  "version": "1.0.1",
+  "type": "module",
+  "bin": {
+    "create-scriptdrop": "create.mjs"
+  },
+  "files": [
+    "create.mjs",
+    "template/"
+  ]
+}
